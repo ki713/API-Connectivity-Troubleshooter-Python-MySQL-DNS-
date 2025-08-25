@@ -1,0 +1,38 @@
+{
+  "info": {
+    "name": "API Troubleshooter Sample",
+    "_postman_id": "abcd-efgh-ijkl-mnop",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Healthcheck",
+      "request": {
+        "method": "GET",
+        "header": [
+          { "key": "Authorization", "value": "Bearer {{API_TOKEN}}" },
+          { "key": "Accept", "value": "application/json" }
+        ],
+        "url": {
+          "raw": "https://api.example.com/health",
+          "protocol": "https",
+          "host": ["api","example","com"],
+          "path": ["health"]
+        }
+      }
+    },
+    {
+      "name": "Get User",
+      "request": {
+        "method": "GET",
+        "header": [{ "key": "Accept", "value": "application/json" }],
+        "url": {
+          "raw": "https://api.example.com/v1/users/1",
+          "protocol": "https",
+          "host": ["api","example","com"],
+          "path": ["v1","users","1"]
+        }
+      }
+    }
+  ]
+}
